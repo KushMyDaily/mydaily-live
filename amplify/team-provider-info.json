@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "mydailylive19995085": {}
+      },
+      "api": {
+        "mydailylive": {}
+      },
+      "storage": {
+        "imagestorage": {}
       }
     }
   }
