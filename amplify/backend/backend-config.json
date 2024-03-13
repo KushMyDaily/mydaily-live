@@ -20,7 +20,17 @@
   "auth": {
     "mydailylive19995085": {
       "customAuth": false,
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "mydailylive19995085PreSignup",
+          "triggerProvider": "Cognito"
+        }
+      ],
       "frontendAuthConfig": {
         "mfaConfiguration": "OFF",
         "mfaTypes": [
@@ -43,6 +53,39 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "mydailylive19995085PreSignup": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_mydailylive19995085PreSignup_DOMAINALLOWLIST": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mydailylive19995085PreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_mydailylive19995085PreSignup_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mydailylive19995085PreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_mydailylive19995085PreSignup_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mydailylive19995085PreSignup"
+        }
+      ]
     }
   },
   "storage": {

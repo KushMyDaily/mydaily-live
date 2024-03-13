@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-amplify71df30dcfebf4-staging-154821-unauthRole",
       "StackName": "amplify-amplify71df30dcfebf4-staging-154821",
       "StackId": "arn:aws:cloudformation:eu-west-2:216038942615:stack/amplify-amplify71df30dcfebf4-staging-154821/f404b4e0-e087-11ee-81a2-0206bbe135bd",
-      "AmplifyAppId": "d3v8otkoewlds8"
+      "AmplifyAppId": "d3v8otkoewlds8",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-amplify71df30dcfebf4-staging-154821-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
@@ -20,6 +21,13 @@
       },
       "storage": {
         "imagestorage": {}
+      },
+      "function": {
+        "mydailylive19995085PreSignup": {
+          "DOMAINALLOWLIST": "'kushan@itsmydaily.com,kushan.pabasara78@gmail.com'",
+          "deploymentBucketName": "amplify-amplify71df30dcfebf4-staging-154821-deployment",
+          "s3Key": "amplify-builds/mydailylive19995085PreSignup-74463978596a38346c44-build.zip"
+        }
       }
     }
   }
