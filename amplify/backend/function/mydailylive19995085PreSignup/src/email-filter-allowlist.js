@@ -3,13 +3,13 @@
  */
 exports.handler = async (event) => {
   // allowed emails
-  const allowedEmails = process.env.DOMAINALLOWLIST;
+  const allowedDomainList = process.env.DOMAINALLOWLIST;
 
-  // Retrieve the email from the event
-  const email = event.request.userAttributes.email;
+  // Split the email address so we can compare domains
+  const address = event.request.userAttributes.email.split("@");
 
   // Check if the provided email is in the allowed list
-  const isAllowed = allowedEmails.includes(email);
+  const isAllowed = allowedDomainList.includes(address[1]);
 
   // Return a response based on whether the email is allowed or not
   if (isAllowed) {

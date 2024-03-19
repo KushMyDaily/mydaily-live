@@ -26,7 +26,7 @@
         "mydailylive19995085PreSignup": {
           "DOMAINALLOWLIST": "'kushan@itsmydaily.com,kushan.pabasara78@gmail.com'",
           "deploymentBucketName": "amplify-amplify71df30dcfebf4-staging-154821-deployment",
-          "s3Key": "amplify-builds/mydailylive19995085PreSignup-74463978596a38346c44-build.zip"
+          "s3Key": "amplify-builds/mydailylive19995085PreSignup-2f514a786b5a544a376e-build.zip"
         }
       }
     }
